@@ -111,7 +111,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://zargari-bot.herokuapp.com/' + Token)
+    bot.set_webhook(url='https://zargari-name.herokuapp.com/' + Token)
     return render_template("index.html"), 200
 
 
