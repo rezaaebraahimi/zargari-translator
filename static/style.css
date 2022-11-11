@@ -9,11 +9,11 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 .box {
-  margin-inline: auto;
-  padding-inline: auto;
+  margin: 0;
+  padding: 0;
   position: absolute;
   align-items: center;
-  width: 800px;
+  width: 55%;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ body {
 .box h2 {
   color: rgb(226, 226, 226);
   text-shadow: 2px 2px black;
-  font-size: 8em;
+  font-size: 8vw;
   z-index: 2;
 }
 .box::before {
@@ -62,7 +62,7 @@ a {
   font-size: 24px;
   overflow: hidden;
   transition: 0.2s;
-  top: 570px;
+  top: 70%;
 }
 a:hover {
   color: #255784;
@@ -128,7 +128,7 @@ h1 {
   margin: 0;
   padding: 0;
   color: #111;
-  font-size: 8em;
+  font-size: 8vw ;
 }
 h1 span {
   display: table-cell;
@@ -175,5 +175,5 @@ h1 span:nth-child(7) {
 img {
   position: absolute;
   align-items: center;
-  top: 330px;
+  top: 40%;
 }
