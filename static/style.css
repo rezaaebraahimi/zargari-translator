@@ -1,3 +1,4 @@
+
 body {
   margin-inline: auto;
   padding-inline: auto;
@@ -9,11 +10,13 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 .box {
+  max-width: 100%;
+  max-height: 100%;
   margin: 0;
   padding: 0;
   position: absolute;
   align-items: center;
-  width: 55%;
+  width: 700px;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -21,6 +24,7 @@ body {
   border-radius: 20px;
   overflow: hidden;
 }
+
 .box h2 {
   color: rgb(226, 226, 226);
   text-shadow: 2px 2px black;
@@ -52,6 +56,7 @@ body {
 }
 
 a {
+  max-width: 100%;
   position: absolute;
   display: inline-block;
   padding: 15px 30px;
@@ -121,14 +126,29 @@ a:hover span:nth-child(4) {
   transition: 1s;
   transition-delay: 0.75s;
 }
-h1 {
-  position: absolute;
-  text-align: center;
-  top: 160px;
-  margin: 0;
-  padding: 0;
-  color: #111;
-  font-size: 8vw ;
+@media screen and (max-width: 1200px){
+  h1 {
+   position: absolute;
+   text-align: center;
+   top: 160px;
+   margin: 0;
+   padding: 0;
+   color: #111;
+   font-size: 5em ;
+   max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px){
+  h1 {
+   position: absolute;
+   text-align: center;
+   top: 160px;
+   margin: 0;
+   padding: 0;
+   color: #111;
+   font-size: 8vw ;
+   max-width: 100%;
+  }
 }
 h1 span {
   display: table-cell;
@@ -173,7 +193,10 @@ h1 span:nth-child(7) {
   }
 }
 img {
-  position: absolute;
+  position: relative;
   align-items: center;
-  top: 40%;
+  top:0px;
+  max-width: 100%;
+  margin: 0vw;
+  border: 50vw;
 }
