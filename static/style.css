@@ -9,11 +9,12 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 .box {
-  margin-inline: auto;
-  padding-inline: auto;
+  margin: 0;
+  padding: 0;
   position: absolute;
   align-items: center;
-  width: 800px;
+  width: 55%;
+  max-width: 500px;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -24,7 +25,7 @@ body {
 .box h2 {
   color: rgb(226, 226, 226);
   text-shadow: 2px 2px black;
-  font-size: 8em;
+  font-size: 8vw;
   z-index: 2;
 }
 .box::before {
@@ -55,6 +56,7 @@ a {
   position: absolute;
   display: inline-block;
   padding: 15px 30px;
+  margin-top: 30px;
   color: #2196f3;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -62,7 +64,8 @@ a {
   font-size: 24px;
   overflow: hidden;
   transition: 0.2s;
-  top: 570px;
+  top: 70%;
+  z-index: 5;
 }
 a:hover {
   color: #255784;
@@ -121,40 +124,41 @@ a:hover span:nth-child(4) {
   transition: 1s;
   transition-delay: 0.75s;
 }
-h1 {
+.title {
   position: absolute;
   text-align: center;
-  top: 160px;
+  top: 60px;
   margin: 0;
   padding: 0;
   color: #111;
-  font-size: 8em;
+
+  z-index: 10;
 }
-h1 span {
+.title span {
   display: table-cell;
   margin: 0;
   padding: 0;
   animation: animate 2s linear infinite;
 }
-h1 span:nth-child(1) {
+.title span:nth-child(1) {
   animation-delay: 0s;
 }
-h1 span:nth-child(2) {
+.title span:nth-child(2) {
   animation-delay: 0.25s;
 }
-h1 span:nth-child(3) {
+.title span:nth-child(3) {
   animation-delay: 0.5s;
 }
-h1 span:nth-child(4) {
+.title span:nth-child(4) {
   animation-delay: 0.75s;
 }
-h1 span:nth-child(5) {
+.title span:nth-child(5) {
   animation-delay: 1s;
 }
-h1 span:nth-child(6) {
+.title span:nth-child(6) {
   animation-delay: 1.25s;
 }
-h1 span:nth-child(7) {
+.title span:nth-child(7) {
   animation-delay: 1.5s;
 }
 @keyframes animate {
@@ -172,8 +176,36 @@ h1 span:nth-child(7) {
     text-shadow: 0 0 10px none;
   }
 }
+
 img {
-  position: absolute;
-  align-items: center;
-  top: 330px;
+  /* position: absolute; */
+  /* align-items: center; */
+  /* top: 10px; */
+
+  z-index: 5;
+}
+
+@media (min-width: 1100px) {
+  .title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .box {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .box {
+    width: 90%;
+    height: 60%;
+    padding: 10px;
+  }
 }
