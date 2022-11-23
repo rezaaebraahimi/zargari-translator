@@ -9,12 +9,11 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 .box {
-  margin: 0;
-  padding: 0;
+  margin-inline: auto;
+  padding-inline: auto;
   position: absolute;
   align-items: center;
-  width: 55%;
-  max-width: 500px;
+  width: 800px;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -25,7 +24,7 @@ body {
 .box h2 {
   color: rgb(226, 226, 226);
   text-shadow: 2px 2px black;
-  font-size: 8vw;
+  font-size: 8em;
   z-index: 2;
 }
 .box::before {
@@ -56,7 +55,6 @@ a {
   position: absolute;
   display: inline-block;
   padding: 15px 30px;
-  margin-top: 30px;
   color: #2196f3;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -64,8 +62,7 @@ a {
   font-size: 24px;
   overflow: hidden;
   transition: 0.2s;
-  top: 70%;
-  z-index: 5;
+  top: 570px;
 }
 a:hover {
   color: #255784;
@@ -124,41 +121,40 @@ a:hover span:nth-child(4) {
   transition: 1s;
   transition-delay: 0.75s;
 }
-.title {
+h1 {
   position: absolute;
   text-align: center;
-  top: 60px;
+  top: 160px;
   margin: 0;
   padding: 0;
   color: #111;
-
-  z-index: 10;
+  font-size: 8em;
 }
-.title span {
+h1 span {
   display: table-cell;
   margin: 0;
   padding: 0;
   animation: animate 2s linear infinite;
 }
-.title span:nth-child(1) {
+h1 span:nth-child(1) {
   animation-delay: 0s;
 }
-.title span:nth-child(2) {
+h1 span:nth-child(2) {
   animation-delay: 0.25s;
 }
-.title span:nth-child(3) {
+h1 span:nth-child(3) {
   animation-delay: 0.5s;
 }
-.title span:nth-child(4) {
+h1 span:nth-child(4) {
   animation-delay: 0.75s;
 }
-.title span:nth-child(5) {
+h1 span:nth-child(5) {
   animation-delay: 1s;
 }
-.title span:nth-child(6) {
+h1 span:nth-child(6) {
   animation-delay: 1.25s;
 }
-.title span:nth-child(7) {
+h1 span:nth-child(7) {
   animation-delay: 1.5s;
 }
 @keyframes animate {
@@ -176,36 +172,8 @@ a:hover span:nth-child(4) {
     text-shadow: 0 0 10px none;
   }
 }
-
 img {
-  /* position: absolute; */
-  /* align-items: center; */
-  /* top: 10px; */
-
-  z-index: 5;
-}
-
-@media (min-width: 1100px) {
-  .title {
-    font-size: 70px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .box {
-    width: 90%;
-    padding: 10px;
-  }
-
-  .title {
-    font-size: 7vw;
-  }
-}
-
-@media (max-width: 550px) {
-  .box {
-    width: 90%;
-    height: 60%;
-    padding: 10px;
-  }
+  position: absolute;
+  align-items: center;
+  top: 330px;
 }
