@@ -14,5 +14,5 @@
 
 <br>
 
-![web-page](https://user-images.githubusercontent.com/117990649/204152480-8beebd2c-d6f9-4eea-9fdd-c6ee667e91af.png)
+
 ![chat](https://user-images.githubusercontent.com/117990649/204152483-b7cf559a-6c0e-4f80-8b5c-eec8870ee1e2.jpg)
